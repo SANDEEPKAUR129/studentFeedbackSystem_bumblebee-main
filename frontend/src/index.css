@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    width: 100%!important;
+}
+body{
+    max-width: 100%!important;
+    min-height: 100vh;
+} 
+.beebody {
+    max-width: 500px;
+    min-height: 450px;
+    margin: 60px auto;
+    padding: 60px 40px 30px 30px;
+    background-color: #dbe9f4;
+    border-radius: 15px;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
+}
+
+.beebody .beehead {
+    font-weight: 610;
+    font-size: 1.5rem;
+    letter-spacing: 1.3px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.beebody .form-field input {
+    width: 100%;
+    display: block;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.2rem;
+    color: #8d7474;
+    padding: 8px 12px 7px 8px;
+}
+
+.beebody .form-field {
+    margin-bottom: 25px;
+    border-radius: 6px;
+    box-shadow: inset 8px 8px 8px rgb(203, 206, 209), inset -8px -8px 8px rgb(255, 255, 255);
+}
+
+.beebody .form-field .fas {
+    color: #555;
+}
+
+.beebody .beebtn {
+    box-shadow: none;
+    width: 80%;
+    height: 40px;
+    font-weight: 120;
+    font-size: 1.0rem;
+    margin-bottom: 20px;
+    background-color: #0c445e;
+    color: #fff;
+    border-radius: 25px;
+    box-shadow: 3px 3px 3px #a6a5a5,
+        -3px -3px 3px #f3efef;
+    letter-spacing: 1.3px;
+    transition: background-color 0.3s ease;
+}
+
+.beebody .beebtn2 {
+  box-shadow: none;
+  width: 80%;
+  height: 40px;
+  font-weight: 120;
+  font-size: 1.0rem;
+  margin-bottom: 5px;
+  background-color: #0c445e;
+  color: #fff;
+  border-radius: 25px;
+  box-shadow: 3px 3px 3px #a6a5a5,
+      -3px -3px 3px #f3efef;
+  letter-spacing: 1.3px;
+  transition: background-color 0.3s ease;
+}
+
+.beebody .btn:hover {
+    background-color: #053449;
+}
+
+.beebody a {
+    text-decoration: underline;
+    font-size: 0.8rem;
+    color: #08a6ef;
+}
+
+.beebody a:hover {
+    color: #053449;
+}
+
+@media(max-width: 380px) {
+    .beebody{
+        margin: 30px 20px;
+        padding: 40px 15px 15px 15px;
+    }
+}
+
+.tabletext{
+    font-size: 15px;
+    font-weight: lighter;
+}
+.boxpaint1 {
+    background-color: blueviolet;
+}
+.boxpaint2 {
+    background-color: goldenrod;
+}
+.boxpaint3 {
+    background-color: burlywood;
+}
+.boxpaint4 {
+    background-color: blanchedalmond;
+}
+
+.hoverCard1{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.hoverCard2{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.hoverCard1:hover {
+    background-color: rgb(59, 40, 135);
+    border-radius: 10px;
+    color:white;
+}
+
+
+
+/* Slide in animation */
+
+
+/* Slide in from left animation */
+@keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Slide in from right animation */
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /*  slide in from left animation to the first button */
+  .slide-button-left {
+    animation: slideInLeft 1.5s ease-out forwards;
+  }
+  
+  /*  slide in from right animation to the second button */
+  .slide-button-right {
+    animation: slideInRight 1.5s ease-out forwards;
+  }
+  
+  /* Hover effect to slightly move buttons */
+  .slide-button-left:hover, .slide-button-right:hover {
+    transform: translateX(5px);
+    transition: transform 0.2s ease-in;
+  }
+  
+  /* viewB */
+ 
+  @keyframes vibrate {
+    0%, 100% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+  }
+  
+  .vibrate-btn {
+    animation: vibrate 0.2s linear 7;
+  
+  }
+ 
+  
+  
